@@ -1,0 +1,76 @@
+{% block main %}
+    <html>
+    <header>
+    </header>
+    <body>
+
+    <div class="header-section" style="
+height: 150px;
+background-image: url(https://assets.swappie.com/sendgrid-email-banner-background-and-image.png);
+background-repeat: no-repeat;
+background-size: cover;
+padding-top: 40px;
+margin-bottom: 20px;
+box-sizing: border-box;
+line-height: 1;">
+        <img src="https://assets.swappie.com/sendgrid-email-swappie-logo.png?v2"
+             style="height: 20px; max-width: 90px; padding-left: 30px;">
+
+    </div>
+    <div style="padding: 16px 30px; font-family: lato, sans-serif;">
+        <h2 class="email-subject" style="font-size: 24px;
+      font-family: Poppins, Roboto, sans-serif;
+      color: #222C9B;
+      text-align: left;
+      margin: 0;
+      font-weight: bold; ">
+            {{ swappie_care_trial }}
+        </h2>
+
+        <h1 style="font-family: sinter, Roboto, sans-serif; font-size: 20px; font-weight: bold;">
+            {{ hello_customer }}
+        </h1>
+        <p>
+            {{ trial_ends_soon }}
+        </p>
+
+        <p>
+            <b>
+                {{ first_payment_on }}
+            </b>
+        </p>
+        <p>
+            <b>
+                {{ subscription_fee }}
+            </b>
+        </p>
+        <p>
+            <b>{{ your_order_number }}</b>
+        </p>
+
+        <p>
+            {{ manage_your_subscription }}
+        </p>
+
+        <p>
+            {{ if_you_have_any_questions }}
+        </p>
+        <p class="email-signature" style="font-weight: 400;
+      font-size: 14px;
+      margin-top: 10px;">
+            {{ kind_regards }}
+
+        </p>
+        <img
+                alt="Swappie Team"
+                class="swappie-logo"
+                style="width: 200px"
+                src="https://assets.swappie.com/sendgrid-email-swappie-team-signature-white-border.png "
+        />
+    </div>
+
+
+    </body>
+
+    </html>
+{% endblock %}
